@@ -36,8 +36,7 @@ int main(){
     cout<<istack.peek()<<endl;
     istack.pop();
     cout<<istack.peek()<<endl;
-
-
+    
     Stack<char> cstack;
 
     cstack.push('a');
