@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
-
+/* this works with mac
+* to make it work on linux or windows include #include<algorithm>
+*/
 int main(){
     int arr[5]={1,2,3,4,5};
     int arr2[2]={1,2};
