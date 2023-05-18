@@ -18,10 +18,15 @@ class Person{
        static void display(){
         cout<<"THS IS A STATIC FUNCITON IN PERSON"<<endl;
        }
+
+       void data(){
+            cout<<"data method";
+       }
 };
 
-Person Person::*p=NULL;
+Person * Person::p=NULL;
 int main(){
    Person p1=Person::singleObject();
    Person::display();
+   p1.data();
 }
