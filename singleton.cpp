@@ -8,13 +8,16 @@ class Person{
         }
     public:
         static Person *p;
-       static Person singleObject(){
+        static Person * getInstance(){
            if(p==NULL){
                  p=new Person();
            }
            
-            return *p;
-       }
+            return p;
+        }
+
+        Person(const Person &)=delete;
+
        static void display(){
         cout<<"THS IS A STATIC FUNCITON IN PERSON"<<endl;
        }
@@ -26,7 +29,7 @@ class Person{
 
 Person * Person::p=NULL;
 int main(){
-   Person p1=Person::singleObject();
+   Person *p1=Person::getInstance();
    Person::display();
-   p1.data();
+   p1->data();
 }

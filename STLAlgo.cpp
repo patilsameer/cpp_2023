@@ -1,4 +1,5 @@
 #include<iostream>
+
 using namespace std;
 /* this works with mac
 * to make it work on linux or windows include #include<algorithm>
