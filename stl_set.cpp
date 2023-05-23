@@ -7,7 +7,7 @@ int main(){
 
     myset.insert(1);
     myset.insert(2);
-    myset.insert(2);
+    myset.insert(2); // set will always keep uniq value no duplicates are allowed
 
     cout<<myset.count(2)<<endl;
 

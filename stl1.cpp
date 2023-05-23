@@ -11,6 +11,7 @@ int main()
 
 
     v.insert(v.begin(),0);
+    v.insert(v.begin(),1);
 
     vector<int>::iterator itr;
 
