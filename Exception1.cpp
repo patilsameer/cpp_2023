@@ -8,7 +8,12 @@ class Stack{
         int arr[10];
 
         class OverFlow{
-
+                public:
+                    string msg;
+                
+                OverFlow(string msg){
+                    this->msg=msg;
+                }
         };
 
         class UnderFlow{
