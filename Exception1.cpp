@@ -17,7 +17,9 @@ class Stack{
         };
 
         class UnderFlow{
-
+                UnderFlow(string msg){
+                    this->msg=msg;
+                }
         };
         Stack(){
             top=-1;
